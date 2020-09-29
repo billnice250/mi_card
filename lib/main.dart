@@ -22,6 +22,11 @@ class MyApp extends StatelessWidget {
               ),
               Text(
                 'Bill Nice',
+                style: TextStyle(
+                    fontFamily: 'Pacifico',
+                    fontSize: 40.0,
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold),
               ),
               Container(
                 width: double.infinity,
