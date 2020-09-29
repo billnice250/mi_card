@@ -13,10 +13,18 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.blueGrey,
         body: SafeArea(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               CircleAvatar(
                 radius: 50,
-                backgroundColor: Colors.white,
+                backgroundImage: AssetImage('images/my_avatar.jpg'),
+              ),
+              Text(
+                'Bill Nice',
+              ),
+              Container(
+                width: double.infinity,
               ),
             ],
           ),
