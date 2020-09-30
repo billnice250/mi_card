@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.blueGrey,
+        backgroundColor: Colors.blueGrey[900],
         body: SafeArea(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -28,8 +28,42 @@ class MyApp extends StatelessWidget {
                     color: Colors.white,
                     fontWeight: FontWeight.bold),
               ),
-              Container(
-                width: double.infinity,
+              Text(
+                'SOFTWARE DEVELOPER',
+                style: TextStyle(
+                    fontFamily: 'Source Sans Pro',
+                    fontSize: 15.0,
+                    letterSpacing: 2.5,
+                    color: Colors.blueGrey[100],
+                    fontWeight: FontWeight.bold),
+              ),
+              Card(
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.phone,
+                    color: Colors.blueGrey[900],
+                  ),
+                  title: Text('+39 380 231 0000',
+                      style: TextStyle(
+                        fontSize: 20.0,
+                        fontFamily: 'Source Sans Pro',
+                      )),
+                ),
+              ),
+              Card(
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.email,
+                    color: Colors.blueGrey[900],
+                  ),
+                  title: Text('billnicejig@gmail.com',
+                      style: TextStyle(
+                        fontSize: 20.0,
+                        fontFamily: 'Source Sans Pro',
+                      )),
+                ),
               ),
             ],
           ),
